@@ -24,6 +24,10 @@ addopts = '-p no:warnings'
 line-length = 79
 extend-exclude = ['migrations']
 
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
 [tool.ruff.lint]
 preview = true
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
