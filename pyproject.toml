@@ -2,13 +2,15 @@
 name = "fast-zero"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["w1zard <jefferson@w1zard.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "3.12.*"
 fastapi = "^0.111.0"
 pydantic = {extras = ["email"], version = "^2.7.4"}
+sqlalchemy = "^2.0.31"
+pydantic-settings = "^2.3.4"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
