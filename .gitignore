@@ -181,7 +181,7 @@ pyrightconfig.json
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
 
 ### VisualStudioCode ###
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -202,4 +202,20 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
 # Generated using ignr.py - github.com/Antrikshy/ignr.py
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+.Icon
+._*
+.TemporaryItems
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+
+### Claude ###
+.claude/
+claude.config.json
+
 database.db
