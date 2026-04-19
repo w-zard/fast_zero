@@ -3,10 +3,10 @@ from sqlalchemy import select
 from fast_zero.models import User
 
 
-def test_create_user(session):
+def test_create_user(session, test_password):
     new_user = User(
         username='dummy',
-        password='s3cret!',
+        password=test_password,
         email='dummy@user.com'
     )
     session.add(new_user)

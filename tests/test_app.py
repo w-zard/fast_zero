@@ -8,13 +8,13 @@ def test_root_retorna_ok_e_ola_mundo(client):
     assert response.json() == {'message': 'Olá Mundo!'}
 
 
-def test_create_user(client):
+def test_create_user(client, test_password):
     response = client.post(
         '/users/',
         json={
             'username': 'alice',
             'email': 'alice@example.com',
-            'password': 'secret',
+            'password': test_password,
         },
     )
     assert response.status_code == HTTPStatus.CREATED
@@ -39,13 +39,13 @@ def test_read_users(client):
     }
 
 
-def test_update_user(client):
+def test_update_user(client, test_password):
     response = client.put(
         '/users/1',
         json={
             'username': 'bob',
             'email': 'bob@example.com',
-            'password': 'mynewpassword',
+            'password': test_password,
         },
     )
     assert response.status_code == HTTPStatus.OK
