@@ -2,6 +2,7 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
+from uuid import uuid4
 
 from fast_zero.app import app
 from fast_zero.models import table_registry
@@ -21,3 +22,8 @@ def session():
         yield session
 
     table_registry.metadata.drop_all(engine)
+
+
+@pytest.fixture()
+def test_password():
+    return f'test-password-{uuid4().hex}'
