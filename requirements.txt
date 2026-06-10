@@ -279,9 +279,9 @@ sqlalchemy==2.0.50 \
     # via
     #   alembic
     #   fast-zero
-starlette==1.0.1 \
-    --hash=sha256:512399c5f1de7fac99c88572212ded9ddeddef2fb32afa82d724000e88b38f4f \
-    --hash=sha256:7c0e69b2ee1c848bd54669d908500117a3ee13de603a21427e5c6fc1adf98dcd
+starlette==1.2.1 \
+    --hash=sha256:4de0082d08c8f6764a85a54cf1120d6939507a19905c7768acad2a9f875d2b89 \
+    --hash=sha256:9b9b5ebb992e67d6093741e63c2f59e4f6fff986f81163c087867bd7b924b3f6
     # via fastapi
 typer==0.25.1 \
     --hash=sha256:75caa44ed46a03fb2dab8808753ffacdbfea88495e74c85a28c5eefcf5f39c89 \
